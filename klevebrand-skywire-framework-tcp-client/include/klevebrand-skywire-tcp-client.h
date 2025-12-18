@@ -6,7 +6,7 @@
 class SkywireTcpClient
 {
 public:
-  SkywireTcpClient(HardwareSerial skywire_serial, String ip_address, int port);
+  SkywireTcpClient(HardwareSerial& skywire_serial, String ip_address, int port);
   bool open();
   bool send(String message);
   bool close();
