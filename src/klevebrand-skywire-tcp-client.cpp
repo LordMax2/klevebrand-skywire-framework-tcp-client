@@ -1,6 +1,6 @@
 #include "klevebrand-skywire-tcp-client.h"
 
-SkywireTcpClient::SkywireTcpClient(HardwareSerial& skywire_serial, String ip_address, int port) : skywire(skywire_serial)
+SkywireTcpClient::SkywireTcpClient(HardwareSerial& skywire_serial, String ip_address, int port) : skywire(skywire_serial, false)
 {
   SkywireTcpClient::ip_address = ip_address;
   SkywireTcpClient::port = port;
